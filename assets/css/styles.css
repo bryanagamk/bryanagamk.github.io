@@ -630,6 +630,7 @@ img {
 .qualification__tabs {
 	display: flex;
 	justify-content: space-evenly;
+	margin-right: 3rem;
 	margin-bottom: var(--mb-2);
 }
 
