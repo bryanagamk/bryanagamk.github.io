@@ -862,6 +862,24 @@ img {
 	width: 265px;
 	border-radius: 0.5rem;
 	justify-self: center;
+	object-fit: cover;
+	height: 12rem;
+}
+
+.portfolio__img-figureskate {
+	object-position: 0 80%;
+}
+
+.portfolio__img-soutaikokutai {
+	object-position: 15% 0;
+}
+
+.portfolio__img-goritax {
+	object-position: 15% 0;
+}
+
+.portfolio__img-monitoring {
+	object-fit: contain;
 }
 
 .portfolio__title {
