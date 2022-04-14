@@ -79,6 +79,8 @@ const modalViews = document.querySelectorAll('.services__modal'),
     modalCloses = document.querySelectorAll('.services__modal-close');
 
 let modal = function (modalClick) {
+    console.log(modalViews);
+    console.log(modalClick);
     modalViews[modalClick].classList.add('active-modal');
 }
 
@@ -113,6 +115,33 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     },
 });
 
+/*==================== PORTFOLIO MODAL  ====================*/
+const modalPortfolioViews = document.querySelectorAll('.portfolio__modal'),
+    modalPortfolioBtns = document.querySelectorAll('.portfolio__button'),
+    modalPortfolioCloses = document.querySelectorAll('.portfolio__modal-close');
+
+
+let modalPortfolio = function (modalClick) {
+    console.log(modalPortfolioViews);
+    console.log(modalClick);
+
+    modalPortfolioViews[modalClick - 1].classList.add('active-modal');
+}
+
+modalPortfolioBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () => {
+        modalPortfolio(i)
+    });
+});
+
+
+modalPortfolioCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalPortfolioViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal');
+        });
+    });
+});
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
