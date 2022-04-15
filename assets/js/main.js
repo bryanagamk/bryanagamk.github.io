@@ -208,7 +208,7 @@ function scrollUp() {
 
 window.addEventListener('scroll', scrollUp);
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'uil-sun';

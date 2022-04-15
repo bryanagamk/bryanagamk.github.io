@@ -1338,14 +1338,14 @@
 		</section>
 
 		<!--==================== TESTIMONIAL ====================-->
-		<section class="testimonial section">
-			<h2 class="section__title">Testimonial</h2>
-			<span class="section__subtitle">My Client saying</span>
+		<!-- <section class="testimonial section"> -->
+			<!-- <h2 class="section__title">Testimonial</h2> -->
+			<!-- <span class="section__subtitle">My Client saying</span> -->
 
-			<div class="testimonial__container container swiper">
-				<div class="swiper-wrapper">
+			<!-- <div class="testimonial__container container swiper"> -->
+				<!-- <div class="swiper-wrapper"> -->
 					<!-- testimonial 1 -->
-					<div class="testimonial__content swiper-slide">
+					<!-- <div class="testimonial__content swiper-slide">
 						<div class="testimonial__data">
 							<div class="testimonial__header">
 								<img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
@@ -1368,10 +1368,10 @@
 							I get a good impression, I carry out my project with all the possible quality and attention
 							and support 24 hours a day
 						</p>
-					</div>
+					</div> -->
 
 					<!-- testimonial 2 -->
-					<div class="testimonial__content swiper-slide">
+					<!-- <div class="testimonial__content swiper-slide">
 						<div class="testimonial__data">
 							<div class="testimonial__header">
 								<img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
@@ -1394,10 +1394,10 @@
 							I get a good impression, I carry out my project with all the possible quality and attention
 							and support 24 hours a day
 						</p>
-					</div>
+					</div> -->
 
 					<!-- testimonial 3 -->
-					<div class="testimonial__content swiper-slide">
+					<!-- <div class="testimonial__content swiper-slide">
 						<div class="testimonial__data">
 							<div class="testimonial__header">
 								<img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
@@ -1421,12 +1421,12 @@
 							and support 24 hours a day
 						</p>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="swiper-pagination swiper-pagination-testimonial"></div>
+				<!-- <div class="swiper-pagination swiper-pagination-testimonial"></div>
 			</div>
 
-		</section>
+		</section> -->
 
 		<!--==================== CONTACT ME ====================-->
 		<section class="contact section" id="contact">
@@ -1439,7 +1439,7 @@
 						<i class="uil uil-phone contact__icon"></i>
 						<div>
 							<h3 class="contact__title">Call Me</h3>
-							<span class="contact__subtitle">999-777-555</span>
+							<span class="contact__subtitle">(+62)8778-7081-407</span>
 						</div>
 					</div>
 
@@ -1460,15 +1460,16 @@
 					</div>
 				</div>
 
-				<form action="" class="contact__form grid">
+				<form onsubmit="https://formsubmit.co/bryanagamk@gmail.com" action="" class="contact__form grid" method="post">
+					<input type="hidden" name="_subject" value="New Email! bryanagamk.github.io">
 					<div class="contact__inputs grid">
 						<div class="contact__content">
 							<label for="" class="contact__label">Name</label>
-							<input type="text" class="contact__input">
+							<input type="text" class="contact__input" required>
 						</div>
 						<div class="contact__content">
 							<label for="" class="contact__label">Email</label>
-							<input type="email" class="contact__input">
+							<input type="email" class="contact__input" required>
 						</div>
 					</div>
 					<div class="contact__content">
@@ -1479,12 +1480,13 @@
 						<label for="" class="contact__label">Message</label>
 						<textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
 					</div>
+					<input type="hidden" name="_next" value="https://bryanagamk.github.io/thanks.html">
 
 					<div>
-						<a href="" class="button button--flex">
+						<button type="submit" class="button button--flex">
 							Send Message
 							<i class="uil uil-message button__icon"></i>
-						</a>
+						</button>
 					</div>
 				</form>
 			</div>
