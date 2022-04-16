@@ -592,6 +592,10 @@ img {
 	width: 90%;
 }
 
+.skills__docker {
+	width: 85%;
+}
+
 .skills__aws {
 	width: 80%;
 }
