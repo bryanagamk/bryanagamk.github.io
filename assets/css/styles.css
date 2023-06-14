@@ -358,6 +358,7 @@ img {
 
 /*==================== BUTTONS ====================*/
 .button {
+	border: 0;
 	display: inline-block;
 	background-color: var(--first-color);
 	color: #fff;
@@ -870,6 +871,10 @@ img {
 	height: 12rem;
 }
 
+.portfolio__img-alumni {
+	object-position: 0 80%;
+}
+
 .portfolio__img-figureskate {
 	object-position: 0 80%;
 }
@@ -917,7 +922,7 @@ img {
 	right: -0.5rem;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets {
+.swiper-horizontal>.swiper-pagination-bullets {
 	bottom: -2.5rem;
 }
 
@@ -929,6 +934,71 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullets {
 	outline: none;
+}
+
+.c-pill {
+	align-items: center;
+	font-weight: bold;
+	font-size: 11px;
+	display: inline-block;
+	height: 100%;
+	white-space: nowrap;
+	width: auto;
+
+	position: relative;
+	border-radius: 100px;
+	line-height: 1;
+	overflow: hidden;
+	padding: 0px 12px 0px 20px;
+	text-overflow: ellipsis;
+	line-height: 1.25rem;
+	color: #fff;
+
+	word-break: break-word;
+
+	&:before {
+		border-radius: 50%;
+		content: '';
+		height: 10px;
+		left: 6px;
+		margin-top: -5px;
+		position: absolute;
+		top: 50%;
+		width: 10px;
+	}
+}
+
+
+.c-pill--success {
+	background: #b4eda0;
+}
+
+.c-pill--success:before {
+	background: #6BC167;
+}
+
+.c-pill--primary {
+	background: var(--first-color);
+}
+
+.c-pill--primary:before {
+	background: var(--first-color-alt);
+}
+
+.c-pill--warning {
+	background: #ffebb6;
+}
+
+.c-pill--warning:before {
+	background: #ffc400;
+}
+
+.c-pill--danger {
+	background: #ffd5d1;
+}
+
+.c-pill--danger:before {
+	background: #ff4436;
 }
 
 /*==================== PROJECT IN MIND ====================*/
@@ -1103,6 +1173,7 @@ img {
 .footer__social {
 	color: #fff;
 }
+
 /*========== SCROLL UP ==========*/
 .scrollup {
 	position: fixed;
@@ -1432,6 +1503,7 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+
 	.header,
 	.main,
 	.footer__container {
@@ -1466,7 +1538,7 @@ img {
 		right: -3.5rem;
 	}
 
-	.swiper-container-horizontal > .swiper-pagination-bullets {
+	.swiper-container-horizontal>.swiper-pagination-bullets {
 		bottom: -4.5rem;
 	}
 
