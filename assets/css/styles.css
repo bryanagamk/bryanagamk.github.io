@@ -944,7 +944,7 @@ img {
 	height: 100%;
 	white-space: nowrap;
 	width: auto;
-
+	max-height: 2em;
 	position: relative;
 	border-radius: 100px;
 	line-height: 1;
